@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Auction</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center">Auction (in wei)</h1>
+          <hr/>
+          <br/>
+        </div>
+      </div>
+
+      <div id="items-row" class="row" >
+        <!-- ITEMS LOAD HERE -->
+      </div>
+    </div>
+
+    <div id="item-template" style="display: none;">
+      <div class="col-sm-6 col-md-4 col-lg-4">
+        <div class="panel panel-default panel-item">
+          <div class="panel-heading">
+            <h3 class="panel-title">Item <h3 class="sold-status" style="display:none">item sold</h3></h3>
+            <p class="winner-email"></p>
+          </div>
+          <div class="panel-body">
+            <img alt="140x140" data-src="holder.js/140x140" class="img-rounded img-center" style="height:300px; width: 300px;" src="https://www.thinkwithgoogle.com/_qs/static/img/icons/data-points/consumer_goods.svg" data-holder-rendered="true">
+            <br/><br/>
+            <p style="display:none" class="item-hash"></p>
+            <div class="item-bash" style="display:none"></div>
+            <strong>Current max bid</strong>: <span class="max-bid">0</span><br/>
+            <input class="bid" data-id="0"/> &nbsp;<br/>
+            <label class="bidder-email" style="display: none" >Email : <input class="email"></label>
+            <button class="btn btn-default btn-bid" type="button" disabled data-id="0">Bid</button> 
+            <button class="btn btn-default btn-sell" type="button" data-id="0">Sell</button>
+            <button class="btn btn-default btn-pay" style="margin-left: 85px; display: none" type="button" data-id="0">Pay</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- jQuery (necessary for axios http requests) -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

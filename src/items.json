@@ -1,0 +1,19 @@
+[
+  {
+    "id": 0,
+    "name": "item 1",
+    "picture": "images/item0.jpg",
+    "itemHash": 1
+  },
+  {
+    "id": 1,
+    "name": "item 2",
+    "picture": "images/item1.jpg",
+    "itemHash": 2
+  },
+  {
+    "id": 2,
+    "name": "item 3",
+    "picture": "images/item2.jpg",
+    "itemHash": 3
+  }]
